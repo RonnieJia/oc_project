@@ -1,0 +1,89 @@
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import "RJFunctions.h"
+#import "FontAndColorConfig.h"
+#import "UIView+Frame.h"
+#import "UIButton+Custom.h"
+#import "UITextField+Custom.h"
+#import "UILabel+Custom.h"
+#import "UIColor+HexColor.h"
+#import "CurrentUserInfo.h"
+#import "RJTools.h"
+#import "RJButton.h"
+#import "RJNullView.h"
+#import "RJNetworkManager.h"
+#import "RJUIViewManager.h"
+#import "RJHTTPClient+Car.h"
+#import "HTTPWebAPIUrl.h"
+#import "RJHTTPClient+API.h"
+#import "ListModelManager.h"
+#import <SDWebImage/SDWebImage.h>
+#import "UIImageView+Custom.h"
+/*JMMessage*/
+#import <JMessage/JMessage.h>
+#import "JMCommom.h"
+#endif
+
+
+#define kBaiDuMapAK     @"9wpFsMNDWBx38ExGe1RhO9GuIkGraxqA"
+
+#define KURLTempFlag    @"testState"
+#define KDefaultImg     [UIImage imageNamed:@"face006"]
+#define kServiceAppKey  @"65b2ef52b6174eb096d4cd1d01d09b55"
+
+#define kShareUrl  [NSString stringWithFormat:@"%@index.php?m=mobile&c=share&a=user_share&uid=",KImgBaseUrl]
+
+#define kMoveHeight         80 //当输入框遮住键盘时输入框弹出的高度
+
+#define RJDebug         NO
+#define kJDAppKey   @"a59cee5dbaac4d998ade85d83fbb6a8c"
+#define kJDAppSecret   @"94ee52916f0c4c29920c17c29be2e666"
+
+//#define kAliKey     @"25364850"//24954161
+//#define kAliAppSecret @"c0210546e93ec2935c55b37e2b9252ae"
+#define kAliScheme          @"dlkdweixiuduan"
+#define kALiPayResultNoti       @"alipay_resiult"
+
+#define kRongAppKey             @"x18ywvqfxblic"
+#define kRongAppSecret          @"GaRoBPzo1sBl"
+
+// 微信
+//#define kWeiXinAppKey           @"wx59bc407cff872b84"
+//#define kWeiXinAppSecret        @"2fed760da60ae6d752d875e02c3b9dc7"
+//#define kWeiXinAppDescription   @"RJBaishixue"
+// 微信
+#define kWeiXinAppKey           @"wx12cf74304d6c09bf"//@"wxacaecc973cf98ef0"
+#define kWeiXinAppSecret        @"1b073e60967a17947ffe6f2604b1313f"
+#define kWeiXinAppDescription   @"RJShehuanarencheng"
+// QQ
+#define kQQAppID                @"101371724"
+#define kQQAppKey               @"4bd7403f7673912aaacc365e90d9e7df"
+
+#define kQQStr                   @"70272187"
+
+/// 上传图片（是图片和名字对应）
+#define kUploadImageName  @"image_name"
+#define kUploadImage        @"image"
+
+#if DEBUG
+#define RJLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define RJLog(args...)    // do nothing.
+#endif
+#define RJLogBOOL(b)        RJLog(@"%@", b? @"YES": @"NO")
+#define RJLogCGPoint(p)		RJLog(@"CGPoint(%f, %f)", p.x, p.y)
+#define RJLogCGSize(s)		RJLog(@"CGSize(%f, %f)", s.width, s.height)
+#define RJLogCGRect(r)		RJLog(@"{CGRect{origin(%f, %f), size(%f, %f)}", r.origin.x, r.origin.y, r.size.width, r.size.height)
+
+#define weakify(var)   __weak typeof(var) weakSelf = var
+#define strongify(var) __strong typeof(var) strongSelf = var
+
+
+#endif /* PrefixHeader_pch */

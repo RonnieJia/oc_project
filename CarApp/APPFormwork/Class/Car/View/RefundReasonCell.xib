@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="93" id="KGk-i7-Jjw" customClass="RefundReasonCell">
+            <rect key="frame" x="0.0" y="0.0" width="563" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="563" height="93"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kov-RE-ghG">
+                        <rect key="frame" x="15" y="16" width="15" height="61"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="lxw-e4-71f"/>
+                        </constraints>
+                        <state key="normal" image="circle003"/>
+                        <state key="selected" image="circle004"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QU-mK-cYA">
+                        <rect key="frame" x="38" y="21" width="492" height="51"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="6QU-mK-cYA" secondAttribute="trailing" constant="13" id="3Oh-q6-VdW"/>
+                    <constraint firstItem="6QU-mK-cYA" firstAttribute="leading" secondItem="Kov-RE-ghG" secondAttribute="trailing" constant="8" id="9bQ-52-BII"/>
+                    <constraint firstItem="6QU-mK-cYA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="Ff6-Wh-2xs"/>
+                    <constraint firstItem="Kov-RE-ghG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="MAY-qh-ftS"/>
+                    <constraint firstItem="Kov-RE-ghG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="T3a-YN-IXs"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="6QU-mK-cYA" secondAttribute="bottom" constant="10" id="edG-fj-SON"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Kov-RE-ghG" secondAttribute="bottom" constant="5" id="rjA-Ww-MT0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="reasonLabel" destination="6QU-mK-cYA" id="rLz-Zk-58O"/>
+                <outlet property="selectBtn" destination="Kov-RE-ghG" id="DiY-ly-V8S"/>
+            </connections>
+            <point key="canvasLocation" x="-300.72463768115944" y="-80.022321428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="circle003" width="15" height="15"/>
+        <image name="circle004" width="15" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_APPFormwork {
+  umbrella header "Pods-APPFormwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>MapLocationViewController</string>
+	<string>HomeViewController</string>
+	<string>CarInfoViewController</string>
+	<string>ShopGoodsDetailViewController</string>
+	<string>GoodsSearchViewController</string>
+	<string>ShopCategoryViewController</string>
+	<string>MyWalletViewController</string>
+	<string>AppRecordDetailViewController</string>
+	<string>HomeSearchViewController</string>
+	<string>CardDetailViewController</string>
+	<string>DownloadVideoPlayViewController</string>
+	<string>HomeDetailViewController</string>
+	<string>SignInfoViewController</string>
+	<string>LossPwdViewController</string>
+	<string>LoginViewController</string>
+	<string>RegisViewController</string>
+</array>
+</plist>
